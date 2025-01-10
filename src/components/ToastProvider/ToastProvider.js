@@ -9,8 +9,8 @@ function ToastProvider({ children }) {
   const handleAddToast = useCallback((message, variant) => {
     const newToast = {
       id: crypto.randomUUID(),
-      variant: message.variant,
-      message: message.message,
+      message: message,
+      variant: variant,
     };
     setToasts((prev) => {
       return [...prev, newToast];

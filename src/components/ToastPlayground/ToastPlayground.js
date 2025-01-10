@@ -31,13 +31,10 @@ function ToastPlayground() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    const { message, variant } = formValues;
+    if (!message || !variant) return;
 
-    if (!formValues.message || !formValues.variant) return;
-
-    handleAddToast({
-      message: formValues.message,
-      variant: formValues.variant,
-    });
+    handleAddToast(message, variant);
 
     resetForm();
   };
