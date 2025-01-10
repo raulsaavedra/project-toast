@@ -4,7 +4,7 @@ import Button from "../Button";
 import styles from "./ToastPlayground.module.css";
 import ToastShelf from "../ToastShelf/ToastShelf";
 import { ToastContext } from "../ToastProvider/ToastProvider";
-import useEscapeKey from "../../hooks/useEscapeKey";
+import useEscapeKey from "../../hooks/useKeydown";
 
 const VARIANT_OPTIONS = ["notice", "warning", "success", "error"];
 
